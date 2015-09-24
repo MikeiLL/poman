@@ -1,0 +1,18 @@
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid $brand-primary;
+    color: $brand-primary;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: $brand-primary;
+    border-color: $brand-primary;
+    background:rgba(255,255,255,0.3);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: darken($brand-primary, 13%);
+    color: darken($brand-primary, 13%);
+    box-shadow: none;
+}

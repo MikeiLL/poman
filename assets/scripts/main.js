@@ -71,7 +71,13 @@
     }
   };
 
-  // Load Events
-  $(document).ready(UTIL.loadEvents);
+$(".featured_items").hover(
+       function () {
+         $(this).toggleClass('featured_item_icons_bigger');
+       }, 
+      function () {
+          $(this).toggleClass('featured_item_icons_bigger');
+       }
+     );
 
 })(jQuery); // Fully reference jQuery after this point.

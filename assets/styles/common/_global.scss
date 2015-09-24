@@ -1,1 +1,153 @@
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
 
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+html { font-size: 62.5%; } 
+
+body {
+	font-family: Avenir, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------
+  END RESET
+--------------------------------------------- */
+
+
+#box {
+    background:rgb(52,163,220);  
+    background: transparent\9;  
+    background:rgba(52,163,220,0.4);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */  
+    padding: 3em;
+}
+
+/* 
+Image Styling
+*/
+
+.box-shadow:after {
+    content: "";
+    height: 1px;
+    display: block;
+    z-index: -1;
+    -webkit-box-shadow: 0px 0px 8px 2px #000000;
+       -moz-box-shadow: 0px 0px 8px 2px #000000;
+            box-shadow: 0px 0px 8px 2px #000000;
+}
+
+.shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: $neutral_gray 3px 3px 6px inset;
+  -webkit-box-shadow: $neutral_gray 3px 3px 6px inset;
+  box-shadow: $neutral_gray 3px 3px 6px inset;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.shadow:hover {
+  -moz-box-shadow: $neutral_gray 5px 5px 12px inset;
+  -webkit-box-shadow: $neutral_gray 5px 5px 12px inset;
+  box-shadow: $neutral_gray 5px 5px 12px inset;
+}
+.shadow img {
+  max-width: 100%;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.img-center {margin:0 auto;}
+
+.wp-post-image {
+	margin: .5rem;
+	}
+
+.col-sm-4 {
+	.wp-post-image {
+		@extend .img-center;
+		}
+}
+.hentry img {
+	@extend .img-responsive;
+}	
+
+/*
+Text Styling
+*/
+
+.well {
+	h2 {
+		margin-bottom: 2.2rem;
+		}
+	}
+	
+.page-header h1 {
+	text-transform: uppercase;
+	margin-left: 25%;
+	font-style: italic;
+}
+
+@media (min-width: 768px) {
+	.page-header h1 {
+		margin-left: 65%;
+	}
+}
+
+.breadcrumbs {margin-top: .8rem; margin-left: 1.5rem;}
+
+.large_text_display { font-size: $font-size-large; 
+		p { 
+			margin: 1rem;
+			}
+	}
+	
+blockquote { 
+			margin: 1.2rem;
+			cite {
+					margin-left: 32%;
+					display:block;
+				}
+			}
+
+ul { margin: 1rem; 
+ li { 
+ 			margin-left: 1.5rem; 
+ 		}
+}
+
+p {
+	margin-bottom: .6rem;
+}
+
+@font-face {
+	font-family: 'Intro-head-r';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/introheadr-base-webfont.ttfs');
+}

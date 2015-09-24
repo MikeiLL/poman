@@ -34,7 +34,7 @@ function setup() {
 
   // Add HTML5 markup for captions
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
-  add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery']);
+  add_theme_support('html5', ['caption', 'comment-form', 'comment-list']);
 
   // Tell the TinyMCE editor to use a custom stylesheet
   add_editor_style(Assets\asset_path('styles/editor-style.css'));
@@ -57,8 +57,8 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
+    'before_widget' => '<row class="col-sm-4 col widget %1$s %2$s">',
+    'after_widget'  => '</row>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);

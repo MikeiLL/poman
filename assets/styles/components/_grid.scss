@@ -8,3 +8,60 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+.post {
+	margin: 1.6rem;
+}
+
+.container-full {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	overflow: auto;
+}
+
+/* The following adapted from JSFiddle for matching height responsive fluid divs */
+@media (min-width: 768px) {
+
+	/* top row */
+	.col .well{ 
+			margin-bottom: -99999px;
+			padding-bottom: 100030px;  
+	}
+
+	/* bottom row */
+	.col-base{ 
+			margin-top: -15px; /* cut off top portion of bottom wells */
+	}
+}
+
+@media (max-width: 767px) {
+	.row.base{
+			display:none;
+	}
+}
+
+.col-wrap{
+    overflow: hidden; 
+}
+
+.well {
+	border-radius: 0px;
+	background-color: none;
+  border: 1px solid tranparent;
+	box-shadow: none;
+	margin-bottom: 0px;
+}
+
+.full-width-well-dark {
+	background-color: $gray-lighter;
+	color: $gray-dark;
+}
+/* End from JSFiddle for matching height responsive fluid divs */
+
+.container {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+

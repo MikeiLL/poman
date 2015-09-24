@@ -12,6 +12,12 @@ function title() {
     } else {
       return __('Latest Posts', 'sage');
     }
+  } elseif ( is_post_type_archive('resource') ) {
+    return "Resources";
+  } elseif ( is_post_type_archive('faq') ) {
+    return "FAQ";
+  } elseif ( is_post_type_archive('service') ) {
+    return "Services";
   } elseif (is_archive()) {
     return get_the_archive_title();
   } elseif (is_search()) {
