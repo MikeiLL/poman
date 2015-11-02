@@ -80,4 +80,8 @@ $(".featured_items").hover(
        }
      );
 
+  $("#share").jsSocials({
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest"]
+  });
+  
 })(jQuery); // Fully reference jQuery after this point.
