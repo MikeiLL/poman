@@ -6,20 +6,6 @@
 	}
 }
 
-.widget_recent_entries {
-	background-image: url("../images/icons/Articles.png");
-  background-repeat: no-repeat;
-  background-position: 40px 30px;
-  ul {
-  	margin-top: 200px;
-  	list-style-type: none;
-  	font-size: $font-size-large;
-  	li {
-  		border-bottom: 1px solid $gray-light;
-  		}
-  	}
-}
-
 .widget {
 	margin-top: 1.5rem;
 	h3 {
