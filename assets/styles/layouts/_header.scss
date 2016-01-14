@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .navbar-brand, .tagline{
-	color: $brand-primary;	
+	color: $brand-primary;
 	text-align: center;
 	font-size: 1.6rem;
 	word-spacing: 30px;
@@ -162,7 +162,7 @@
   &:hover, &:focus {
       background-color: lighten($brand-primary, 10%); }
     .icon-bar {
-      background-color: $semi-opaque-white; 
+      background-color: $semi-opaque-white;
       }
 
   // Bars
@@ -264,23 +264,23 @@
 .invitation {
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
     border-radius: 4px;
-    margin-top: 11rem;
+    margin-top: 20rem;
     padding: 2rem;
     width: 18rem;
 }
 
 .banner {
 	min-height: 8em;
-	background: $brand-primary url("../images/McCormick_Twine_Binder_1884.gif") repeat scroll center center / 1280px 600px;
+	background: $brand-primary url("../images/PoManHeader.png") repeat scroll left top / 1280px 600px;
 }
 
 .hero {
-	background: url('../images/McCormick_Twine_Binder_1884.gif');
+	background: url('../images/PoManHeader.png');
 	background-repeat: none;
 	background-size: 1280px 600px;
 	height: 400px;
 	background-position: center center;
-	position: relative; 
+	position: relative;
 }
 
 
@@ -290,7 +290,7 @@
 		background-position: center center;
 		background-size: 1792px 840px;
 		}
-		
+
 	.banner {
 		background-size: 1792px 840px;
 	}
@@ -306,18 +306,18 @@
 		   -moz-box-shadow: 0px 0px 8px 2px #333;
 				box-shadow: 0px 0px 8px 2px #333;
 	}
-	
+
 	.hero {
 	height: 600px;
 	background-position: center top;
 }
-	
+
 	.invitation {
 		padding: 2rem;
 		border-radius: 4px;
-		margin-top: 11rem;
+		margin-top: 20rem;
 	}
-	
+
 	.hero {
 		height: 600px;
 		background-position: center center;

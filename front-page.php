@@ -10,7 +10,7 @@
 
   <!-- row for wells -->
 		<div class="row col-wrap">
-      <?php get_template_part('templates/front-page/produce'); ?>
+      <?php //get_template_part('templates/front-page/produce'); ?>
 		</div><!-- /.row col-wrap first row-->
 
 <?php endwhile; ?>
