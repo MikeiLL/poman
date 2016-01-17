@@ -10,7 +10,16 @@
   color:red;
 }
 
-.field_to_fork_thumb {
-  float:right;
-}
+.container {
+  margin-top: 3rem;
+  }
+
+.field-to-fork-page-title {
+  margin-top: 2rem;
+  }
+
+.field_to_fork_row {display:table}
+
+.altRow .field_to_fork_thumb {float:left}
+.Row .field_to_fork_thumb {float:right;}
 
